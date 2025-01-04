@@ -1,0 +1,149 @@
+2024-12-27 16:30:43.587 +03:00 [INF] User profile is available. Using 'C:\Users\MLNPC\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2024-12-27 16:30:43.905 +03:00 [WRN] Overriding address(es) 'https://localhost:7050, http://localhost:5278'. Binding to endpoints defined via IConfiguration and/or UseKestrel() instead.
+2024-12-27 16:30:43.989 +03:00 [INF] Now listening on: http://localhost:5000
+2024-12-27 16:30:43.992 +03:00 [INF] Now listening on: https://localhost:7000
+2024-12-27 16:30:43.993 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-12-27 16:30:43.995 +03:00 [INF] Hosting environment: Development
+2024-12-27 16:30:43.996 +03:00 [INF] Content root path: C:\Users\MLNPC\Desktop\APIProjects\ApiGateway
+2024-12-27 16:30:53.831 +03:00 [INF] Request starting HTTP/1.1 GET https://localhost:7000/auth/User/GetAllUsers - null null
+2024-12-27 16:30:54.106 +03:00 [INF] requestId: 0HN96FAO0B0H7:00000001, previousRequestId: No PreviousRequestId, message: 'The path '/auth/User/GetAllUsers' is an authenticated route! AuthenticationMiddleware checking if client is authenticated...'
+2024-12-27 16:30:54.108 +03:00 [INF] requestId: 0HN96FAO0B0H7:00000001, previousRequestId: No PreviousRequestId, message: 'Client has been authenticated for path '/auth/User/GetAllUsers' by 'AuthenticationTypes.Federation' scheme.'
+2024-12-27 16:30:54.110 +03:00 [INF] requestId: 0HN96FAO0B0H7:00000001, previousRequestId: No PreviousRequestId, message: 'route is authenticated scopes must be checked'
+2024-12-27 16:30:54.112 +03:00 [INF] requestId: 0HN96FAO0B0H7:00000001, previousRequestId: No PreviousRequestId, message: 'user scopes is authorized calling next authorization checks'
+2024-12-27 16:30:54.113 +03:00 [INF] requestId: 0HN96FAO0B0H7:00000001, previousRequestId: No PreviousRequestId, message: '/api/{everything} route does not require user to be authorized'
+2024-12-27 16:30:54.210 +03:00 [INF] requestId: 0HN96FAO0B0H7:00000001, previousRequestId: No PreviousRequestId, message: '200 (OK) status code of request URI: https://localhost:7254/api/User/GetAllUsers.'
+2024-12-27 16:30:54.247 +03:00 [INF] Request finished HTTP/1.1 GET https://localhost:7000/auth/User/GetAllUsers - 200 null application/json; charset=utf-8 424.1736ms
+2024-12-27 16:30:54.254 +03:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET https://localhost:7000/auth/User/GetAllUsers, Response status code: 200
+2024-12-27 16:30:59.293 +03:00 [INF] Request starting HTTP/1.1 GET https://localhost:7000/auth/User/GetAllUsers - null null
+2024-12-27 16:30:59.304 +03:00 [INF] requestId: 0HN96FAO0B0H7:00000002, previousRequestId: No PreviousRequestId, message: 'The path '/auth/User/GetAllUsers' is an authenticated route! AuthenticationMiddleware checking if client is authenticated...'
+2024-12-27 16:30:59.305 +03:00 [INF] requestId: 0HN96FAO0B0H7:00000002, previousRequestId: No PreviousRequestId, message: 'Client has been authenticated for path '/auth/User/GetAllUsers' by 'AuthenticationTypes.Federation' scheme.'
+2024-12-27 16:30:59.306 +03:00 [INF] requestId: 0HN96FAO0B0H7:00000002, previousRequestId: No PreviousRequestId, message: 'route is authenticated scopes must be checked'
+2024-12-27 16:30:59.308 +03:00 [INF] requestId: 0HN96FAO0B0H7:00000002, previousRequestId: No PreviousRequestId, message: 'user scopes is authorized calling next authorization checks'
+2024-12-27 16:30:59.309 +03:00 [INF] requestId: 0HN96FAO0B0H7:00000002, previousRequestId: No PreviousRequestId, message: '/api/{everything} route does not require user to be authorized'
+2024-12-27 16:30:59.320 +03:00 [INF] requestId: 0HN96FAO0B0H7:00000002, previousRequestId: No PreviousRequestId, message: '200 (OK) status code of request URI: https://localhost:7254/api/User/GetAllUsers.'
+2024-12-27 16:30:59.323 +03:00 [INF] Request finished HTTP/1.1 GET https://localhost:7000/auth/User/GetAllUsers - 200 null application/json; charset=utf-8 29.97ms
+2024-12-27 16:30:59.331 +03:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET https://localhost:7000/auth/User/GetAllUsers, Response status code: 200
+2024-12-27 16:31:18.676 +03:00 [INF] User profile is available. Using 'C:\Users\MLNPC\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2024-12-27 16:31:18.866 +03:00 [WRN] Overriding address(es) 'https://localhost:7050, http://localhost:5278'. Binding to endpoints defined via IConfiguration and/or UseKestrel() instead.
+2024-12-27 16:31:18.912 +03:00 [INF] Now listening on: http://localhost:5000
+2024-12-27 16:31:18.914 +03:00 [INF] Now listening on: https://localhost:7000
+2024-12-27 16:31:18.915 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-12-27 16:31:18.916 +03:00 [INF] Hosting environment: Development
+2024-12-27 16:31:18.917 +03:00 [INF] Content root path: C:\Users\MLNPC\Desktop\APIProjects\ApiGateway
+2024-12-27 16:31:33.337 +03:00 [INF] Request starting HTTP/1.1 GET https://localhost:7000/auth/User/GetAllUsers - null null
+2024-12-27 16:31:33.583 +03:00 [INF] requestId: 0HN96FB3P1031:00000001, previousRequestId: No PreviousRequestId, message: 'The path '/auth/User/GetAllUsers' is an authenticated route! AuthenticationMiddleware checking if client is authenticated...'
+2024-12-27 16:31:33.587 +03:00 [INF] requestId: 0HN96FB3P1031:00000001, previousRequestId: No PreviousRequestId, message: 'Client has been authenticated for path '/auth/User/GetAllUsers' by 'AuthenticationTypes.Federation' scheme.'
+2024-12-27 16:31:33.590 +03:00 [INF] requestId: 0HN96FB3P1031:00000001, previousRequestId: No PreviousRequestId, message: 'route is authenticated scopes must be checked'
+2024-12-27 16:31:33.592 +03:00 [INF] requestId: 0HN96FB3P1031:00000001, previousRequestId: No PreviousRequestId, message: 'user scopes is authorized calling next authorization checks'
+2024-12-27 16:31:33.593 +03:00 [INF] requestId: 0HN96FB3P1031:00000001, previousRequestId: No PreviousRequestId, message: '/api/{everything} route does not require user to be authorized'
+2024-12-27 16:31:33.763 +03:00 [INF] requestId: 0HN96FB3P1031:00000001, previousRequestId: No PreviousRequestId, message: '200 (OK) status code of request URI: https://localhost:7254/api/User/GetAllUsers.'
+2024-12-27 16:31:33.803 +03:00 [INF] Request finished HTTP/1.1 GET https://localhost:7000/auth/User/GetAllUsers - 200 null application/json; charset=utf-8 474.1666ms
+2024-12-27 16:31:33.811 +03:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET https://localhost:7000/auth/User/GetAllUsers, Response status code: 200
+2024-12-27 16:31:35.229 +03:00 [INF] Request starting HTTP/1.1 GET https://localhost:7000/auth/User/GetAllUsers - null null
+2024-12-27 16:31:35.239 +03:00 [INF] requestId: 0HN96FB3P1031:00000002, previousRequestId: No PreviousRequestId, message: 'The path '/auth/User/GetAllUsers' is an authenticated route! AuthenticationMiddleware checking if client is authenticated...'
+2024-12-27 16:31:35.240 +03:00 [INF] requestId: 0HN96FB3P1031:00000002, previousRequestId: No PreviousRequestId, message: 'Client has been authenticated for path '/auth/User/GetAllUsers' by 'AuthenticationTypes.Federation' scheme.'
+2024-12-27 16:31:35.241 +03:00 [INF] requestId: 0HN96FB3P1031:00000002, previousRequestId: No PreviousRequestId, message: 'route is authenticated scopes must be checked'
+2024-12-27 16:31:35.242 +03:00 [INF] requestId: 0HN96FB3P1031:00000002, previousRequestId: No PreviousRequestId, message: 'user scopes is authorized calling next authorization checks'
+2024-12-27 16:31:35.243 +03:00 [INF] requestId: 0HN96FB3P1031:00000002, previousRequestId: No PreviousRequestId, message: '/api/{everything} route does not require user to be authorized'
+2024-12-27 16:31:35.255 +03:00 [INF] requestId: 0HN96FB3P1031:00000002, previousRequestId: No PreviousRequestId, message: '200 (OK) status code of request URI: https://localhost:7254/api/User/GetAllUsers.'
+2024-12-27 16:31:35.258 +03:00 [INF] Request finished HTTP/1.1 GET https://localhost:7000/auth/User/GetAllUsers - 200 null application/json; charset=utf-8 29.2532ms
+2024-12-27 16:31:35.262 +03:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET https://localhost:7000/auth/User/GetAllUsers, Response status code: 200
+2024-12-27 17:00:36.944 +03:00 [INF] User profile is available. Using 'C:\Users\MLNPC\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2024-12-27 17:00:37.239 +03:00 [WRN] Overriding address(es) 'https://localhost:7050, http://localhost:5278'. Binding to endpoints defined via IConfiguration and/or UseKestrel() instead.
+2024-12-27 17:00:37.298 +03:00 [INF] Now listening on: http://localhost:5000
+2024-12-27 17:00:37.300 +03:00 [INF] Now listening on: https://localhost:7000
+2024-12-27 17:00:37.302 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-12-27 17:00:37.303 +03:00 [INF] Hosting environment: Development
+2024-12-27 17:00:37.304 +03:00 [INF] Content root path: C:\Users\MLNPC\Desktop\APIProjects\ApiGateway
+2024-12-27 17:00:56.769 +03:00 [INF] Request starting HTTP/1.1 GET https://localhost:7000/auth/User/GetAllUsers - null null
+2024-12-27 17:00:57.001 +03:00 [INF] requestId: 0HN96FRHAEMPP:00000001, previousRequestId: No PreviousRequestId, message: 'The path '/auth/User/GetAllUsers' is an authenticated route! AuthenticationMiddleware checking if client is authenticated...'
+2024-12-27 17:00:57.004 +03:00 [INF] requestId: 0HN96FRHAEMPP:00000001, previousRequestId: No PreviousRequestId, message: 'Client has been authenticated for path '/auth/User/GetAllUsers' by 'AuthenticationTypes.Federation' scheme.'
+2024-12-27 17:00:57.008 +03:00 [INF] requestId: 0HN96FRHAEMPP:00000001, previousRequestId: No PreviousRequestId, message: 'route is authenticated scopes must be checked'
+2024-12-27 17:00:57.010 +03:00 [INF] requestId: 0HN96FRHAEMPP:00000001, previousRequestId: No PreviousRequestId, message: 'user scopes is authorized calling next authorization checks'
+2024-12-27 17:00:57.011 +03:00 [INF] requestId: 0HN96FRHAEMPP:00000001, previousRequestId: No PreviousRequestId, message: '/api/{everything} route does not require user to be authorized'
+2024-12-27 17:00:58.291 +03:00 [INF] requestId: 0HN96FRHAEMPP:00000001, previousRequestId: No PreviousRequestId, message: '200 (OK) status code of request URI: https://localhost:7254/api/User/GetAllUsers.'
+2024-12-27 17:00:58.320 +03:00 [INF] Request finished HTTP/1.1 GET https://localhost:7000/auth/User/GetAllUsers - 200 null application/json; charset=utf-8 1563.6374ms
+2024-12-27 17:00:58.325 +03:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET https://localhost:7000/auth/User/GetAllUsers, Response status code: 200
+2024-12-27 17:01:00.410 +03:00 [INF] Request starting HTTP/1.1 GET https://localhost:7000/auth/User/GetAllUsers - null null
+2024-12-27 17:01:00.417 +03:00 [INF] requestId: 0HN96FRHAEMPP:00000002, previousRequestId: No PreviousRequestId, message: 'The path '/auth/User/GetAllUsers' is an authenticated route! AuthenticationMiddleware checking if client is authenticated...'
+2024-12-27 17:01:00.417 +03:00 [INF] requestId: 0HN96FRHAEMPP:00000002, previousRequestId: No PreviousRequestId, message: 'Client has been authenticated for path '/auth/User/GetAllUsers' by 'AuthenticationTypes.Federation' scheme.'
+2024-12-27 17:01:00.418 +03:00 [INF] requestId: 0HN96FRHAEMPP:00000002, previousRequestId: No PreviousRequestId, message: 'route is authenticated scopes must be checked'
+2024-12-27 17:01:00.419 +03:00 [INF] requestId: 0HN96FRHAEMPP:00000002, previousRequestId: No PreviousRequestId, message: 'user scopes is authorized calling next authorization checks'
+2024-12-27 17:01:00.419 +03:00 [INF] requestId: 0HN96FRHAEMPP:00000002, previousRequestId: No PreviousRequestId, message: '/api/{everything} route does not require user to be authorized'
+2024-12-27 17:01:00.483 +03:00 [INF] requestId: 0HN96FRHAEMPP:00000002, previousRequestId: No PreviousRequestId, message: '200 (OK) status code of request URI: https://localhost:7254/api/User/GetAllUsers.'
+2024-12-27 17:01:00.485 +03:00 [INF] Request finished HTTP/1.1 GET https://localhost:7000/auth/User/GetAllUsers - 200 null application/json; charset=utf-8 74.9663ms
+2024-12-27 17:01:00.487 +03:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET https://localhost:7000/auth/User/GetAllUsers, Response status code: 200
+2024-12-27 17:01:01.219 +03:00 [INF] Request starting HTTP/1.1 GET https://localhost:7000/auth/User/GetAllUsers - null null
+2024-12-27 17:01:01.224 +03:00 [INF] requestId: 0HN96FRHAEMPP:00000003, previousRequestId: No PreviousRequestId, message: 'The path '/auth/User/GetAllUsers' is an authenticated route! AuthenticationMiddleware checking if client is authenticated...'
+2024-12-27 17:01:01.225 +03:00 [INF] requestId: 0HN96FRHAEMPP:00000003, previousRequestId: No PreviousRequestId, message: 'Client has been authenticated for path '/auth/User/GetAllUsers' by 'AuthenticationTypes.Federation' scheme.'
+2024-12-27 17:01:01.227 +03:00 [INF] requestId: 0HN96FRHAEMPP:00000003, previousRequestId: No PreviousRequestId, message: 'route is authenticated scopes must be checked'
+2024-12-27 17:01:01.228 +03:00 [INF] requestId: 0HN96FRHAEMPP:00000003, previousRequestId: No PreviousRequestId, message: 'user scopes is authorized calling next authorization checks'
+2024-12-27 17:01:01.229 +03:00 [INF] requestId: 0HN96FRHAEMPP:00000003, previousRequestId: No PreviousRequestId, message: '/api/{everything} route does not require user to be authorized'
+2024-12-27 17:01:01.261 +03:00 [INF] requestId: 0HN96FRHAEMPP:00000003, previousRequestId: No PreviousRequestId, message: '200 (OK) status code of request URI: https://localhost:7254/api/User/GetAllUsers.'
+2024-12-27 17:01:01.263 +03:00 [INF] Request finished HTTP/1.1 GET https://localhost:7000/auth/User/GetAllUsers - 200 null application/json; charset=utf-8 44.075ms
+2024-12-27 17:01:01.266 +03:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET https://localhost:7000/auth/User/GetAllUsers, Response status code: 200
+2024-12-27 17:01:02.203 +03:00 [INF] Request starting HTTP/1.1 GET https://localhost:7000/auth/User/GetAllUsers - null null
+2024-12-27 17:01:02.205 +03:00 [INF] requestId: 0HN96FRHAEMPP:00000004, previousRequestId: No PreviousRequestId, message: 'The path '/auth/User/GetAllUsers' is an authenticated route! AuthenticationMiddleware checking if client is authenticated...'
+2024-12-27 17:01:02.206 +03:00 [INF] requestId: 0HN96FRHAEMPP:00000004, previousRequestId: No PreviousRequestId, message: 'Client has been authenticated for path '/auth/User/GetAllUsers' by 'AuthenticationTypes.Federation' scheme.'
+2024-12-27 17:01:02.207 +03:00 [INF] requestId: 0HN96FRHAEMPP:00000004, previousRequestId: No PreviousRequestId, message: 'route is authenticated scopes must be checked'
+2024-12-27 17:01:02.208 +03:00 [INF] requestId: 0HN96FRHAEMPP:00000004, previousRequestId: No PreviousRequestId, message: 'user scopes is authorized calling next authorization checks'
+2024-12-27 17:01:02.208 +03:00 [INF] requestId: 0HN96FRHAEMPP:00000004, previousRequestId: No PreviousRequestId, message: '/api/{everything} route does not require user to be authorized'
+2024-12-27 17:01:02.213 +03:00 [INF] requestId: 0HN96FRHAEMPP:00000004, previousRequestId: No PreviousRequestId, message: '200 (OK) status code of request URI: https://localhost:7254/api/User/GetAllUsers.'
+2024-12-27 17:01:02.216 +03:00 [INF] Request finished HTTP/1.1 GET https://localhost:7000/auth/User/GetAllUsers - 200 null application/json; charset=utf-8 12.9304ms
+2024-12-27 17:01:02.219 +03:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET https://localhost:7000/auth/User/GetAllUsers, Response status code: 200
+2024-12-27 17:01:03.516 +03:00 [INF] Request starting HTTP/1.1 GET https://localhost:7000/auth/User/GetAllUsers - null null
+2024-12-27 17:01:03.518 +03:00 [INF] requestId: 0HN96FRHAEMPP:00000005, previousRequestId: No PreviousRequestId, message: 'The path '/auth/User/GetAllUsers' is an authenticated route! AuthenticationMiddleware checking if client is authenticated...'
+2024-12-27 17:01:03.519 +03:00 [INF] requestId: 0HN96FRHAEMPP:00000005, previousRequestId: No PreviousRequestId, message: 'Client has been authenticated for path '/auth/User/GetAllUsers' by 'AuthenticationTypes.Federation' scheme.'
+2024-12-27 17:01:03.520 +03:00 [INF] requestId: 0HN96FRHAEMPP:00000005, previousRequestId: No PreviousRequestId, message: 'route is authenticated scopes must be checked'
+2024-12-27 17:01:03.520 +03:00 [INF] requestId: 0HN96FRHAEMPP:00000005, previousRequestId: No PreviousRequestId, message: 'user scopes is authorized calling next authorization checks'
+2024-12-27 17:01:03.521 +03:00 [INF] requestId: 0HN96FRHAEMPP:00000005, previousRequestId: No PreviousRequestId, message: '/api/{everything} route does not require user to be authorized'
+2024-12-27 17:01:03.525 +03:00 [INF] requestId: 0HN96FRHAEMPP:00000005, previousRequestId: No PreviousRequestId, message: '200 (OK) status code of request URI: https://localhost:7254/api/User/GetAllUsers.'
+2024-12-27 17:01:03.527 +03:00 [INF] Request finished HTTP/1.1 GET https://localhost:7000/auth/User/GetAllUsers - 200 null application/json; charset=utf-8 11.1191ms
+2024-12-27 17:01:03.530 +03:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET https://localhost:7000/auth/User/GetAllUsers, Response status code: 200
+2024-12-27 17:01:23.140 +03:00 [INF] Request starting HTTP/1.1 GET https://localhost:7000/auth/User/GetAllUsers - null null
+2024-12-27 17:01:23.143 +03:00 [INF] requestId: 0HN96FRHAEMPP:00000006, previousRequestId: No PreviousRequestId, message: 'The path '/auth/User/GetAllUsers' is an authenticated route! AuthenticationMiddleware checking if client is authenticated...'
+2024-12-27 17:01:23.144 +03:00 [INF] requestId: 0HN96FRHAEMPP:00000006, previousRequestId: No PreviousRequestId, message: 'Client has been authenticated for path '/auth/User/GetAllUsers' by 'AuthenticationTypes.Federation' scheme.'
+2024-12-27 17:01:23.144 +03:00 [INF] requestId: 0HN96FRHAEMPP:00000006, previousRequestId: No PreviousRequestId, message: 'route is authenticated scopes must be checked'
+2024-12-27 17:01:23.145 +03:00 [INF] requestId: 0HN96FRHAEMPP:00000006, previousRequestId: No PreviousRequestId, message: 'user scopes is authorized calling next authorization checks'
+2024-12-27 17:01:23.145 +03:00 [INF] requestId: 0HN96FRHAEMPP:00000006, previousRequestId: No PreviousRequestId, message: '/api/{everything} route does not require user to be authorized'
+2024-12-27 17:01:23.154 +03:00 [INF] requestId: 0HN96FRHAEMPP:00000006, previousRequestId: No PreviousRequestId, message: '200 (OK) status code of request URI: https://localhost:7254/api/User/GetAllUsers.'
+2024-12-27 17:01:23.155 +03:00 [INF] Request finished HTTP/1.1 GET https://localhost:7000/auth/User/GetAllUsers - 200 null application/json; charset=utf-8 15.2118ms
+2024-12-27 17:01:23.158 +03:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET https://localhost:7000/auth/User/GetAllUsers, Response status code: 200
+2024-12-27 17:01:23.712 +03:00 [INF] Request starting HTTP/1.1 GET https://localhost:7000/auth/User/GetAllUsers - null null
+2024-12-27 17:01:23.716 +03:00 [INF] requestId: 0HN96FRHAEMPP:00000007, previousRequestId: No PreviousRequestId, message: 'The path '/auth/User/GetAllUsers' is an authenticated route! AuthenticationMiddleware checking if client is authenticated...'
+2024-12-27 17:01:23.717 +03:00 [INF] requestId: 0HN96FRHAEMPP:00000007, previousRequestId: No PreviousRequestId, message: 'Client has been authenticated for path '/auth/User/GetAllUsers' by 'AuthenticationTypes.Federation' scheme.'
+2024-12-27 17:01:23.718 +03:00 [INF] requestId: 0HN96FRHAEMPP:00000007, previousRequestId: No PreviousRequestId, message: 'route is authenticated scopes must be checked'
+2024-12-27 17:01:23.720 +03:00 [INF] requestId: 0HN96FRHAEMPP:00000007, previousRequestId: No PreviousRequestId, message: 'user scopes is authorized calling next authorization checks'
+2024-12-27 17:01:23.721 +03:00 [INF] requestId: 0HN96FRHAEMPP:00000007, previousRequestId: No PreviousRequestId, message: '/api/{everything} route does not require user to be authorized'
+2024-12-27 17:01:23.731 +03:00 [INF] requestId: 0HN96FRHAEMPP:00000007, previousRequestId: No PreviousRequestId, message: '200 (OK) status code of request URI: https://localhost:7254/api/User/GetAllUsers.'
+2024-12-27 17:01:23.735 +03:00 [INF] Request finished HTTP/1.1 GET https://localhost:7000/auth/User/GetAllUsers - 200 null application/json; charset=utf-8 23.4306ms
+2024-12-27 17:01:23.738 +03:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET https://localhost:7000/auth/User/GetAllUsers, Response status code: 200
+2024-12-27 17:01:24.263 +03:00 [INF] Request starting HTTP/1.1 GET https://localhost:7000/auth/User/GetAllUsers - null null
+2024-12-27 17:01:24.267 +03:00 [INF] requestId: 0HN96FRHAEMPP:00000008, previousRequestId: No PreviousRequestId, message: 'The path '/auth/User/GetAllUsers' is an authenticated route! AuthenticationMiddleware checking if client is authenticated...'
+2024-12-27 17:01:24.268 +03:00 [INF] requestId: 0HN96FRHAEMPP:00000008, previousRequestId: No PreviousRequestId, message: 'Client has been authenticated for path '/auth/User/GetAllUsers' by 'AuthenticationTypes.Federation' scheme.'
+2024-12-27 17:01:24.269 +03:00 [INF] requestId: 0HN96FRHAEMPP:00000008, previousRequestId: No PreviousRequestId, message: 'route is authenticated scopes must be checked'
+2024-12-27 17:01:24.270 +03:00 [INF] requestId: 0HN96FRHAEMPP:00000008, previousRequestId: No PreviousRequestId, message: 'user scopes is authorized calling next authorization checks'
+2024-12-27 17:01:24.271 +03:00 [INF] requestId: 0HN96FRHAEMPP:00000008, previousRequestId: No PreviousRequestId, message: '/api/{everything} route does not require user to be authorized'
+2024-12-27 17:01:24.277 +03:00 [INF] requestId: 0HN96FRHAEMPP:00000008, previousRequestId: No PreviousRequestId, message: '200 (OK) status code of request URI: https://localhost:7254/api/User/GetAllUsers.'
+2024-12-27 17:01:24.279 +03:00 [INF] Request finished HTTP/1.1 GET https://localhost:7000/auth/User/GetAllUsers - 200 null application/json; charset=utf-8 15.8244ms
+2024-12-27 17:01:24.283 +03:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET https://localhost:7000/auth/User/GetAllUsers, Response status code: 200
+2024-12-27 17:01:24.715 +03:00 [INF] Request starting HTTP/1.1 GET https://localhost:7000/auth/User/GetAllUsers - null null
+2024-12-27 17:01:24.719 +03:00 [INF] requestId: 0HN96FRHAEMPP:00000009, previousRequestId: No PreviousRequestId, message: 'The path '/auth/User/GetAllUsers' is an authenticated route! AuthenticationMiddleware checking if client is authenticated...'
+2024-12-27 17:01:24.723 +03:00 [INF] requestId: 0HN96FRHAEMPP:00000009, previousRequestId: No PreviousRequestId, message: 'Client has been authenticated for path '/auth/User/GetAllUsers' by 'AuthenticationTypes.Federation' scheme.'
+2024-12-27 17:01:24.724 +03:00 [INF] requestId: 0HN96FRHAEMPP:00000009, previousRequestId: No PreviousRequestId, message: 'route is authenticated scopes must be checked'
+2024-12-27 17:01:24.725 +03:00 [INF] requestId: 0HN96FRHAEMPP:00000009, previousRequestId: No PreviousRequestId, message: 'user scopes is authorized calling next authorization checks'
+2024-12-27 17:01:24.727 +03:00 [INF] requestId: 0HN96FRHAEMPP:00000009, previousRequestId: No PreviousRequestId, message: '/api/{everything} route does not require user to be authorized'
+2024-12-27 17:01:24.737 +03:00 [INF] requestId: 0HN96FRHAEMPP:00000009, previousRequestId: No PreviousRequestId, message: '200 (OK) status code of request URI: https://localhost:7254/api/User/GetAllUsers.'
+2024-12-27 17:01:24.739 +03:00 [INF] Request finished HTTP/1.1 GET https://localhost:7000/auth/User/GetAllUsers - 200 null application/json; charset=utf-8 24.3721ms
+2024-12-27 17:01:24.743 +03:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET https://localhost:7000/auth/User/GetAllUsers, Response status code: 200
+2024-12-27 17:01:25.495 +03:00 [INF] Request starting HTTP/1.1 GET https://localhost:7000/auth/User/GetAllUsers - null null
+2024-12-27 17:01:25.499 +03:00 [INF] requestId: 0HN96FRHAEMPP:0000000A, previousRequestId: No PreviousRequestId, message: 'The path '/auth/User/GetAllUsers' is an authenticated route! AuthenticationMiddleware checking if client is authenticated...'
+2024-12-27 17:01:25.500 +03:00 [INF] requestId: 0HN96FRHAEMPP:0000000A, previousRequestId: No PreviousRequestId, message: 'Client has been authenticated for path '/auth/User/GetAllUsers' by 'AuthenticationTypes.Federation' scheme.'
+2024-12-27 17:01:25.501 +03:00 [INF] requestId: 0HN96FRHAEMPP:0000000A, previousRequestId: No PreviousRequestId, message: 'route is authenticated scopes must be checked'
+2024-12-27 17:01:25.501 +03:00 [INF] requestId: 0HN96FRHAEMPP:0000000A, previousRequestId: No PreviousRequestId, message: 'user scopes is authorized calling next authorization checks'
+2024-12-27 17:01:25.502 +03:00 [INF] requestId: 0HN96FRHAEMPP:0000000A, previousRequestId: No PreviousRequestId, message: '/api/{everything} route does not require user to be authorized'
+2024-12-27 17:01:25.508 +03:00 [INF] requestId: 0HN96FRHAEMPP:0000000A, previousRequestId: No PreviousRequestId, message: '200 (OK) status code of request URI: https://localhost:7254/api/User/GetAllUsers.'
+2024-12-27 17:01:25.510 +03:00 [INF] Request finished HTTP/1.1 GET https://localhost:7000/auth/User/GetAllUsers - 200 null application/json; charset=utf-8 15.3768ms
+2024-12-27 17:01:25.514 +03:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET https://localhost:7000/auth/User/GetAllUsers, Response status code: 200
+2024-12-27 17:01:27.552 +03:00 [INF] Request starting HTTP/1.1 GET https://localhost:7000/auth/User/GetAllUsers - null null
+2024-12-27 17:01:27.556 +03:00 [INF] Request finished HTTP/1.1 GET https://localhost:7000/auth/User/GetAllUsers - 499 null null 3.9304ms
