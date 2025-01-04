@@ -3935,11 +3935,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\MLNPC\\Desktop\\FindMovix\\Backend\\FileImageService\\ApiConsume\\FileImageService.BusinessLayer\\FileImageService.BusinessLayer.csproj",
+      "projectUniqueName": "D:\\GitHubRepos\\Dental-Disease-Detection-Project-Backend\\FileImageService\\ApiConsume\\FileImageService.BusinessLayer\\FileImageService.BusinessLayer.csproj",
       "projectName": "FileImageService.BusinessLayer",
-      "projectPath": "C:\\Users\\MLNPC\\Desktop\\FindMovix\\Backend\\FileImageService\\ApiConsume\\FileImageService.BusinessLayer\\FileImageService.BusinessLayer.csproj",
+      "projectPath": "D:\\GitHubRepos\\Dental-Disease-Detection-Project-Backend\\FileImageService\\ApiConsume\\FileImageService.BusinessLayer\\FileImageService.BusinessLayer.csproj",
       "packagesPath": "C:\\Users\\MLNPC\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\MLNPC\\Desktop\\FindMovix\\Backend\\FileImageService\\ApiConsume\\FileImageService.BusinessLayer\\obj\\",
+      "outputPath": "D:\\GitHubRepos\\Dental-Disease-Detection-Project-Backend\\FileImageService\\ApiConsume\\FileImageService.BusinessLayer\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -3960,14 +3960,14 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "projectReferences": {
-            "C:\\Users\\MLNPC\\Desktop\\FindMovix\\Backend\\FileImageService\\ApiConsume\\FileImageService.DataAccessLayer\\FileImageService.DataAccessLayer.csproj": {
-              "projectPath": "C:\\Users\\MLNPC\\Desktop\\FindMovix\\Backend\\FileImageService\\ApiConsume\\FileImageService.DataAccessLayer\\FileImageService.DataAccessLayer.csproj"
+            "D:\\GitHubRepos\\Dental-Disease-Detection-Project-Backend\\FileImageService\\ApiConsume\\FileImageService.DataAccessLayer\\FileImageService.DataAccessLayer.csproj": {
+              "projectPath": "D:\\GitHubRepos\\Dental-Disease-Detection-Project-Backend\\FileImageService\\ApiConsume\\FileImageService.DataAccessLayer\\FileImageService.DataAccessLayer.csproj"
             },
-            "C:\\Users\\MLNPC\\Desktop\\FindMovix\\Backend\\FileImageService\\ApiConsume\\FileImageService.DtoLayer\\FileImageService.DtoLayer.csproj": {
-              "projectPath": "C:\\Users\\MLNPC\\Desktop\\FindMovix\\Backend\\FileImageService\\ApiConsume\\FileImageService.DtoLayer\\FileImageService.DtoLayer.csproj"
+            "D:\\GitHubRepos\\Dental-Disease-Detection-Project-Backend\\FileImageService\\ApiConsume\\FileImageService.DtoLayer\\FileImageService.DtoLayer.csproj": {
+              "projectPath": "D:\\GitHubRepos\\Dental-Disease-Detection-Project-Backend\\FileImageService\\ApiConsume\\FileImageService.DtoLayer\\FileImageService.DtoLayer.csproj"
             },
-            "C:\\Users\\MLNPC\\Desktop\\FindMovix\\Backend\\FileImageService\\ApiConsume\\FileImageService.EntityLayer\\FileImageService.EntityLayer.csproj": {
-              "projectPath": "C:\\Users\\MLNPC\\Desktop\\FindMovix\\Backend\\FileImageService\\ApiConsume\\FileImageService.EntityLayer\\FileImageService.EntityLayer.csproj"
+            "D:\\GitHubRepos\\Dental-Disease-Detection-Project-Backend\\FileImageService\\ApiConsume\\FileImageService.EntityLayer\\FileImageService.EntityLayer.csproj": {
+              "projectPath": "D:\\GitHubRepos\\Dental-Disease-Detection-Project-Backend\\FileImageService\\ApiConsume\\FileImageService.EntityLayer\\FileImageService.EntityLayer.csproj"
             }
           }
         }

@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "7jc9vyIUJEEYWJfCKSaFZNcp+CsI4kjXj4kVDfHmmHsTKO9hOvVOiOlUrJwR6fQ+g0GrpQEJcpozT9Qb+0BPQA==",
+  "dgSpecHash": "cSXH0LSFiOhzF7vftWN4hvGhSjeXkJBs+qy4inmHNR5wyjGG27XcaWDMbqM2H1d720NQDfq24SUFamED4iwtkA==",
   "success": true,
-  "projectFilePath": "C:\\Users\\MLNPC\\Desktop\\FindMovix\\Backend\\FileImageService\\ApiConsume\\FileImageService.API\\FileImageService.API.csproj",
+  "projectFilePath": "D:\\GitHubRepos\\Dental-Disease-Detection-Project-Backend\\FileImageService\\ApiConsume\\FileImageService.API\\FileImageService.API.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\MLNPC\\.nuget\\packages\\automapper\\12.0.0\\automapper.12.0.0.nupkg.sha512",
     "C:\\Users\\MLNPC\\.nuget\\packages\\automapper.extensions.microsoft.dependencyinjection\\12.0.0\\automapper.extensions.microsoft.dependencyinjection.12.0.0.nupkg.sha512",

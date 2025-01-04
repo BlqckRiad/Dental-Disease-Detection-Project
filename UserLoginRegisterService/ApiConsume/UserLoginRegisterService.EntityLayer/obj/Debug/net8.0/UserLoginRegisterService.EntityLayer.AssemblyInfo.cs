@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("UserLoginRegisterService.EntityLayer")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+96b23bb880a4fc2047f94f54b4157f6a3b94f832")]
 [assembly: System.Reflection.AssemblyProductAttribute("UserLoginRegisterService.EntityLayer")]
 [assembly: System.Reflection.AssemblyTitleAttribute("UserLoginRegisterService.EntityLayer")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

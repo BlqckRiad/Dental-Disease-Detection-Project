@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "6V1vOf/ijRbdVwDnngvQM2e+2cZyYCTRmMWWE2XVGdMHdrGh33Q8cKOolFUpTX3Jy9UDqUK/fNgrHDo9Gkh30g==",
+  "dgSpecHash": "PWkGOg/sBxOQr8s6LAZzpX+cwn8NuAqpLJtDDZuoYHM1QeiPpNFb98C0hKPa+cedi8dc1075bBuPX0ahKMekaQ==",
   "success": true,
-  "projectFilePath": "C:\\Users\\MLNPC\\Desktop\\APIProjects\\UserLoginRegisterService\\ApiConsume\\UserLoginRegisterService.BusinessLayer\\UserLoginRegisterService.BusinessLayer.csproj",
+  "projectFilePath": "D:\\GitHubRepos\\Dental-Disease-Detection-Project-Backend\\UserLoginRegisterService\\ApiConsume\\UserLoginRegisterService.BusinessLayer\\UserLoginRegisterService.BusinessLayer.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\MLNPC\\.nuget\\packages\\automapper\\12.0.0\\automapper.12.0.0.nupkg.sha512",
     "C:\\Users\\MLNPC\\.nuget\\packages\\automapper.extensions.microsoft.dependencyinjection\\12.0.0\\automapper.extensions.microsoft.dependencyinjection.12.0.0.nupkg.sha512",
