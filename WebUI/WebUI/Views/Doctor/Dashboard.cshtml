@@ -1,0 +1,186 @@
+@{
+    ViewData["Title"] = "Doktor Dashboard";
+    Layout = "_DoctorLayout";
+}
+
+<div class="row">
+    <div class="col-md-3 mb-4">
+        <div class="card bg-primary text-white">
+            <div class="card-body">
+                <div class="d-flex justify-content-between align-items-center">
+                    <div>
+                        <h6 class="card-title mb-1">Bugünkü Randevu</h6>
+                        <h3 class="mb-0">8</h3>
+                        <p class="mb-0">2 Randevu Kaldı</p>
+                    </div>
+                    <div class="icon-circle bg-primary-light">
+                        <i class="fas fa-calendar-day fa-2x"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="col-md-3 mb-4">
+        <div class="card bg-success text-white">
+            <div class="card-body">
+                <div class="d-flex justify-content-between align-items-center">
+                    <div>
+                        <h6 class="card-title mb-1">Toplam Hasta</h6>
+                        <h3 class="mb-0">156</h3>
+                        <p class="mb-0">Aktif Hasta</p>
+                    </div>
+                    <div class="icon-circle bg-success-light">
+                        <i class="fas fa-users fa-2x"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="col-md-3 mb-4">
+        <div class="card bg-info text-white">
+            <div class="card-body">
+                <div class="d-flex justify-content-between align-items-center">
+                    <div>
+                        <h6 class="card-title mb-1">Bu Ay</h6>
+                        <h3 class="mb-0">42</h3>
+                        <p class="mb-0">Tedavi</p>
+                    </div>
+                    <div class="icon-circle bg-info-light">
+                        <i class="fas fa-tooth fa-2x"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="col-md-3 mb-4">
+        <div class="card bg-warning text-white">
+            <div class="card-body">
+                <div class="d-flex justify-content-between align-items-center">
+                    <div>
+                        <h6 class="card-title mb-1">Bekleyen</h6>
+                        <h3 class="mb-0">5</h3>
+                        <p class="mb-0">Onay Bekleyen</p>
+                    </div>
+                    <div class="icon-circle bg-warning-light">
+                        <i class="fas fa-clock fa-2x"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-md-8 mb-4">
+        <div class="card">
+            <div class="card-header bg-white d-flex justify-content-between align-items-center">
+                <h5 class="card-title mb-0">Bugünkü Randevular</h5>
+                <a href="/Doctor/Appointments" class="btn btn-sm btn-outline-primary">
+                    Tüm Randevular
+                </a>
+            </div>
+            <div class="card-body">
+                <div class="table-responsive">
+                    <table class="table table-hover">
+                        <thead>
+                            <tr>
+                                <th>Saat</th>
+                                <th>Hasta</th>
+                                <th>İşlem</th>
+                                <th>Durum</th>
+                                <th>İşlemler</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>09:00</td>
+                                <td>Ahmet Yılmaz</td>
+                                <td>Diş Kontrolü</td>
+                                <td><span class="badge bg-success">Tamamlandı</span></td>
+                                <td>
+                                    <button class="btn btn-sm btn-outline-primary">
+                                        <i class="fas fa-eye"></i>
+                                    </button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>10:30</td>
+                                <td>Ayşe Demir</td>
+                                <td>Dolgu</td>
+                                <td><span class="badge bg-warning">Bekleniyor</span></td>
+                                <td>
+                                    <button class="btn btn-sm btn-outline-primary">
+                                        <i class="fas fa-eye"></i>
+                                    </button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>14:00</td>
+                                <td>Mehmet Kaya</td>
+                                <td>Kanal Tedavisi</td>
+                                <td><span class="badge bg-info">Hazırlanıyor</span></td>
+                                <td>
+                                    <button class="btn btn-sm btn-outline-primary">
+                                        <i class="fas fa-eye"></i>
+                                    </button>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="col-md-4 mb-4">
+        <div class="card">
+            <div class="card-header bg-white">
+                <h5 class="card-title mb-0">Çalışma Programı</h5>
+            </div>
+            <div class="card-body">
+                <div class="mb-3">
+                    <div class="d-flex justify-content-between align-items-center mb-2">
+                        <span>Pazartesi - Cuma</span>
+                        <span class="badge bg-success">Aktif</span>
+                    </div>
+                    <p class="text-muted mb-0">09:00 - 17:00</p>
+                </div>
+                <div class="mb-3">
+                    <div class="d-flex justify-content-between align-items-center mb-2">
+                        <span>Cumartesi</span>
+                        <span class="badge bg-warning">Yarım Gün</span>
+                    </div>
+                    <p class="text-muted mb-0">09:00 - 13:00</p>
+                </div>
+                <div>
+                    <div class="d-flex justify-content-between align-items-center mb-2">
+                        <span>Pazar</span>
+                        <span class="badge bg-danger">Kapalı</span>
+                    </div>
+                    <p class="text-muted mb-0">Hizmet Verilmiyor</p>
+                </div>
+                <hr>
+                <div class="d-grid">
+                    <a href="/Doctor/Schedule" class="btn btn-outline-primary">
+                        <i class="fas fa-edit me-2"></i>Programı Düzenle
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+@section Scripts {
+    <script>
+        // Sayfa yüklendiğinde kullanıcının doktor olup olmadığını kontrol et
+        document.addEventListener('DOMContentLoaded', function() {
+            const userRole = localStorage.getItem('userRoleName');
+            if (userRole !== 'Doctor') {
+                window.location.href = '/';
+            }
+        });
+    </script>
+} 

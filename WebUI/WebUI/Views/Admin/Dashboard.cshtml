@@ -1,0 +1,159 @@
+@{
+    ViewData["Title"] = "Admin Dashboard";
+    Layout = "_AdminLayout";
+}
+
+<div class="row">
+    <div class="col-md-3 mb-4">
+        <div class="card bg-primary text-white">
+            <div class="card-body">
+                <div class="d-flex justify-content-between align-items-center">
+                    <div>
+                        <h6 class="card-title mb-1">Toplam Hasta</h6>
+                        <h3 class="mb-0">150</h3>
+                    </div>
+                    <div class="icon-circle bg-primary-light">
+                        <i class="fas fa-users fa-2x"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="col-md-3 mb-4">
+        <div class="card bg-success text-white">
+            <div class="card-body">
+                <div class="d-flex justify-content-between align-items-center">
+                    <div>
+                        <h6 class="card-title mb-1">Aktif Doktor</h6>
+                        <h3 class="mb-0">12</h3>
+                    </div>
+                    <div class="icon-circle bg-success-light">
+                        <i class="fas fa-user-md fa-2x"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="col-md-3 mb-4">
+        <div class="card bg-info text-white">
+            <div class="card-body">
+                <div class="d-flex justify-content-between align-items-center">
+                    <div>
+                        <h6 class="card-title mb-1">Bugünkü Randevu</h6>
+                        <h3 class="mb-0">25</h3>
+                    </div>
+                    <div class="icon-circle bg-info-light">
+                        <i class="fas fa-calendar-check fa-2x"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="col-md-3 mb-4">
+        <div class="card bg-warning text-white">
+            <div class="card-body">
+                <div class="d-flex justify-content-between align-items-center">
+                    <div>
+                        <h6 class="card-title mb-1">Bekleyen Randevu</h6>
+                        <h3 class="mb-0">8</h3>
+                    </div>
+                    <div class="icon-circle bg-warning-light">
+                        <i class="fas fa-clock fa-2x"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-md-8 mb-4">
+        <div class="card">
+            <div class="card-header bg-white">
+                <h5 class="card-title mb-0">Son Randevular</h5>
+            </div>
+            <div class="card-body">
+                <div class="table-responsive">
+                    <table class="table table-hover">
+                        <thead>
+                            <tr>
+                                <th>Hasta</th>
+                                <th>Doktor</th>
+                                <th>Tarih</th>
+                                <th>Durum</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Ahmet Yılmaz</td>
+                                <td>Dr. Mehmet Öz</td>
+                                <td>15.01.2024 10:00</td>
+                                <td><span class="badge bg-success">Tamamlandı</span></td>
+                            </tr>
+                            <tr>
+                                <td>Ayşe Demir</td>
+                                <td>Dr. Fatma Şahin</td>
+                                <td>15.01.2024 11:30</td>
+                                <td><span class="badge bg-warning">Bekliyor</span></td>
+                            </tr>
+                            <tr>
+                                <td>Ali Kaya</td>
+                                <td>Dr. Mehmet Öz</td>
+                                <td>15.01.2024 14:00</td>
+                                <td><span class="badge bg-danger">İptal</span></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="col-md-4 mb-4">
+        <div class="card">
+            <div class="card-header bg-white">
+                <h5 class="card-title mb-0">Doktor Durumları</h5>
+            </div>
+            <div class="card-body">
+                <div class="doctor-status mb-3">
+                    <div class="d-flex justify-content-between align-items-center mb-2">
+                        <span>Dr. Mehmet Öz</span>
+                        <span class="badge bg-success">Müsait</span>
+                    </div>
+                    <div class="progress" style="height: 5px;">
+                        <div class="progress-bar bg-success" style="width: 25%"></div>
+                    </div>
+                </div>
+                
+                <div class="doctor-status mb-3">
+                    <div class="d-flex justify-content-between align-items-center mb-2">
+                        <span>Dr. Fatma Şahin</span>
+                        <span class="badge bg-warning">Meşgul</span>
+                    </div>
+                    <div class="progress" style="height: 5px;">
+                        <div class="progress-bar bg-warning" style="width: 75%"></div>
+                    </div>
+                </div>
+                
+                <div class="doctor-status">
+                    <div class="d-flex justify-content-between align-items-center mb-2">
+                        <span>Dr. Ali Yıldız</span>
+                        <span class="badge bg-danger">İzinli</span>
+                    </div>
+                    <div class="progress" style="height: 5px;">
+                        <div class="progress-bar bg-danger" style="width: 100%"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+@section Scripts {
+    <script>
+        // Dashboard için gerekli scriptler buraya eklenebilir
+    </script>
+} 

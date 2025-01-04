@@ -86,7 +86,7 @@ namespace UserLoginRegisterService.API.Controllers
 			userrequest.UserSexsID = user.UserSexsID;
 			userrequest.UserID = user.UserID;
 			userrequest.UserToken = token;
-
+			userrequest.UserRoleName = _roleService.TGetByid(user.UserRoleID).RoleName;
 			return Ok(userrequest);
 		}
 

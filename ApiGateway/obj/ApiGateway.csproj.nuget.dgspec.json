@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\MLNPC\\Desktop\\APIProjects\\ApiGateway\\ApiGateway.csproj": {}
+    "D:\\GitHubRepos\\Dental-Disease-Detection-Project-Backend\\ApiGateway\\ApiGateway.csproj": {}
   },
   "projects": {
-    "C:\\Users\\MLNPC\\Desktop\\APIProjects\\ApiGateway\\ApiGateway.csproj": {
+    "D:\\GitHubRepos\\Dental-Disease-Detection-Project-Backend\\ApiGateway\\ApiGateway.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\MLNPC\\Desktop\\APIProjects\\ApiGateway\\ApiGateway.csproj",
+        "projectUniqueName": "D:\\GitHubRepos\\Dental-Disease-Detection-Project-Backend\\ApiGateway\\ApiGateway.csproj",
         "projectName": "ApiGateway",
-        "projectPath": "C:\\Users\\MLNPC\\Desktop\\APIProjects\\ApiGateway\\ApiGateway.csproj",
+        "projectPath": "D:\\GitHubRepos\\Dental-Disease-Detection-Project-Backend\\ApiGateway\\ApiGateway.csproj",
         "packagesPath": "C:\\Users\\MLNPC\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\MLNPC\\Desktop\\APIProjects\\ApiGateway\\obj\\",
+        "outputPath": "D:\\GitHubRepos\\Dental-Disease-Detection-Project-Backend\\ApiGateway\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

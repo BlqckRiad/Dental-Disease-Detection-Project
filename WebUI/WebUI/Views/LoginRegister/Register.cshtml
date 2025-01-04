@@ -1,0 +1,145 @@
+@model WebUI.Models.ViewModels.RegisterViewModel
+
+@{
+    ViewData["Title"] = "Kayıt Ol";
+    Layout = null;
+}
+
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - Dental Sistem</title>
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body class="auth-page">
+    <div class="login-container">
+        <div class="login-card">
+            <div class="text-center mb-4">
+                <i class="fas fa-tooth text-primary mb-2" style="font-size: 2rem;"></i>
+                <h3 class="mb-1">Dental Sistem</h3>
+                <p class="text-muted">Kayıt Ol</p>
+            </div>
+            <form id="registerForm">
+                <div class="form-group mb-3">
+                    <div class="input-group">
+                        <span class="input-group-text bg-white border-end-0">
+                            <i class="fas fa-user text-muted"></i>
+                        </span>
+                        <input type="text" name="name" class="form-control border-start-0" placeholder="Ad" required>
+                    </div>
+                </div>
+
+                <div class="form-group mb-3">
+                    <div class="input-group">
+                        <span class="input-group-text bg-white border-end-0">
+                            <i class="fas fa-user text-muted"></i>
+                        </span>
+                        <input type="text" name="surName" class="form-control border-start-0" placeholder="Soyad" required>
+                    </div>
+                </div>
+
+                <div class="form-group mb-3">
+                    <div class="input-group">
+                        <span class="input-group-text bg-white border-end-0">
+                            <i class="fas fa-user-circle text-muted"></i>
+                        </span>
+                        <input type="text" name="userName" class="form-control border-start-0" placeholder="Kullanıcı Adı" required>
+                    </div>
+                </div>
+
+                <div class="form-group mb-3">
+                    <div class="input-group">
+                        <span class="input-group-text bg-white border-end-0">
+                            <i class="fas fa-envelope text-muted"></i>
+                        </span>
+                        <input type="email" name="userEmail" class="form-control border-start-0" placeholder="E-posta" required>
+                    </div>
+                </div>
+
+                <div class="form-group mb-3">
+                    <div class="input-group">
+                        <span class="input-group-text bg-white border-end-0">
+                            <i class="fas fa-phone text-muted"></i>
+                        </span>
+                        <input type="tel" name="userTelNo" class="form-control border-start-0" placeholder="Telefon Numarası" required>
+                    </div>
+                </div>
+
+                <div class="form-group mb-3">
+                    <div class="input-group">
+                        <span class="input-group-text bg-white border-end-0">
+                            <i class="fas fa-lock text-muted"></i>
+                        </span>
+                        <input type="password" name="password" class="form-control border-start-0" placeholder="Şifre" required>
+                    </div>
+                </div>
+
+                <div class="d-grid gap-2">
+                    <button type="submit" class="btn btn-primary">
+                        <i class="fas fa-user-plus me-2"></i>Kayıt Ol
+                    </button>
+                    <a href="/LoginRegister/Login" class="btn btn-outline-secondary">
+                        <i class="fas fa-sign-in-alt me-2"></i>Giriş Yap
+                    </a>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    
+    <script>
+        $(document).ready(function() {
+            $('#registerForm').on('submit', function(e) {
+                e.preventDefault();
+                
+                var formData = {
+                    name: $('input[name="name"]').val().trim(),
+                    surName: $('input[name="surName"]').val().trim(),
+                    userName: $('input[name="userName"]').val().trim(),
+                    userEmail: $('input[name="userEmail"]').val().trim(),
+                    password: $('input[name="password"]').val(),
+                    userTelNo: $('input[name="userTelNo"]').val().trim()
+                };
+
+                $.ajax({
+                    url: '/LoginRegister/Register',
+                    type: 'POST',
+                    contentType: 'application/json',
+                    data: JSON.stringify(formData),
+                    beforeSend: function() {
+                        $('button[type="submit"]').prop('disabled', true).html(
+                            '<span class="spinner-border spinner-border-sm me-2"></span>Kaydediliyor...'
+                        );
+                    },
+                    success: function(response) {
+                        if (response.success) {
+                            alert('Kayıt başarılı! Giriş sayfasına yönlendiriliyorsunuz.');
+                            window.location.href = '/LoginRegister/Login';
+                        } else {
+                            alert(response.message || 'Kayıt sırasında bir hata oluştu.');
+                        }
+                    },
+                    error: function(xhr) {
+                        var errorMessage = 'Kayıt sırasında bir hata oluştu.';
+                        if (xhr.responseJSON && xhr.responseJSON.message) {
+                            errorMessage = xhr.responseJSON.message;
+                        }
+                        alert(errorMessage);
+                    },
+                    complete: function() {
+                        $('button[type="submit"]').prop('disabled', false).html(
+                            '<i class="fas fa-user-plus me-2"></i>Kayıt Ol'
+                        );
+                    }
+                });
+            });
+        });
+    </script>
+</body>
+</html> 

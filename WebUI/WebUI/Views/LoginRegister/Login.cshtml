@@ -1,0 +1,134 @@
+@model WebUI.Models.ViewModels.LoginViewModel
+
+@{
+    ViewData["Title"] = "Giriş Yap";
+    Layout = null;
+}
+
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - Dental Sistem</title>
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body class="auth-page">
+    <div class="login-container">
+        <div class="login-card">
+            <div class="text-center mb-4">
+                <i class="fas fa-tooth text-primary mb-2" style="font-size: 2rem;"></i>
+                <h3 class="mb-1">Dental Sistem</h3>
+                <p class="text-muted">Giriş Yap</p>
+            </div>
+            <form id="loginForm">
+                <div class="form-group mb-3">
+                    <div class="input-group">
+                        <span class="input-group-text bg-white border-end-0">
+                            <i class="fas fa-envelope text-muted"></i>
+                        </span>
+                        <input name="EmailOrPhone" class="form-control border-start-0" placeholder="Email veya Telefon Numarası">
+                    </div>
+                    <span class="text-danger small"></span>
+                </div>
+                <div class="form-group mb-3">
+                    <div class="input-group">
+                        <span class="input-group-text bg-white border-end-0">
+                            <i class="fas fa-lock text-muted"></i>
+                        </span>
+                        <input name="Password" type="password" class="form-control border-start-0" placeholder="Şifre">
+                    </div>
+                    <span class="text-danger small"></span>
+                </div>
+                <div class="d-flex justify-content-end mb-3">
+                    <a href="#" class="text-primary small text-decoration-none">Şifremi Unuttum</a>
+                </div>
+                <div class="d-grid mb-3">
+                    <button type="submit" class="btn btn-primary">Giriş Yap</button>
+                </div>
+            </form>
+            <div class="text-center">
+                <span class="text-muted small">Hesabınız yok mu?</span>
+                <a asp-action="Register" class="text-primary small text-decoration-none ms-1">Kayıt Ol</a>
+            </div>
+        </div>
+    </div>
+
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    
+    <script>
+        $(document).ready(function() {
+            // Sayfa yüklendiğinde localStorage kontrolü
+            const savedToken = localStorage.getItem('userToken');
+            const savedRole = localStorage.getItem('userRoleName');
+            if (savedToken && savedRole) {
+                redirectToUserDashboard(savedRole);
+            }
+
+            $('#loginForm').on('submit', function(e) {
+                e.preventDefault();
+                
+                var formData = {
+                    EmailOrPhone: $('input[name="EmailOrPhone"]').val(),
+                    Password: $('input[name="Password"]').val()
+                };
+
+                $.ajax({
+                    url: '@Url.Action("Login", "LoginRegister")',
+                    type: 'POST',
+                    data: formData,
+                    success: function(response) {
+                        if (response.success) {
+                            var data = JSON.parse(response.data);
+                            
+                            // 30 günlük süre ayarla
+                            const expirationDate = new Date(Date.now() + 30 * 24 * 60 * 60 * 1000);
+                            
+                            // Kullanıcı bilgilerini localStorage'a kaydet
+                            localStorage.setItem('userID', data.userID);
+                            localStorage.setItem('name', data.name);
+                            localStorage.setItem('surName', data.surName);
+                            localStorage.setItem('userName', data.userName);
+                            localStorage.setItem('userEmail', data.userEmail);
+                            localStorage.setItem('userTelNo', data.userTelNo);
+                            localStorage.setItem('userToken', data.userToken);
+                            localStorage.setItem('userRoleID', data.userRoleID);
+                            localStorage.setItem('userRoleName', data.userRoleName);
+                            
+                            // Cookie'leri ayarla
+                            document.cookie = `userToken=${data.userToken}; path=/; expires=${expirationDate.toUTCString()}`;
+                            document.cookie = `userRoleName=${data.userRoleName}; path=/; expires=${expirationDate.toUTCString()}`;
+                            
+                            redirectToUserDashboard(data.userRoleName);
+                        } else {
+                            alert(response.message);
+                        }
+                    },
+                    error: function() {
+                        alert('Giriş yapılırken bir hata oluştu. Lütfen tekrar deneyin.');
+                    }
+                });
+            });
+        });
+
+        function redirectToUserDashboard(userRole) {
+            switch(userRole) {
+                case 'Admin':
+                    window.location.href = '/Admin/Dashboard';
+                    break;
+                case 'User':
+                    window.location.href = '/User/Dashboard';
+                    break;
+                case 'Doctor':
+                    window.location.href = '/Doctor/Dashboard';
+                    break;
+                default:
+                    window.location.href = '/';
+            }
+        }
+    </script>
+</body>
+</html> 

@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - Doktor Paneli</title>
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+        <div class="container">
+            <a class="navbar-brand" href="/Doctor/Dashboard">
+                <i class="fas fa-tooth me-2"></i>
+                Doktor Paneli
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav me-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="/Doctor/Dashboard">
+                            <i class="fas fa-home me-1"></i>Ana Sayfa
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/Doctor/Appointments">
+                            <i class="fas fa-calendar-alt me-1"></i>Randevularım
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/Doctor/Patients">
+                            <i class="fas fa-users me-1"></i>Hastalarım
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/Doctor/Schedule">
+                            <i class="fas fa-clock me-1"></i>Çalışma Saatleri
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/Doctor/Profile">
+                            <i class="fas fa-user-md me-1"></i>Profil
+                        </a>
+                    </li>
+                </ul>
+                <div class="d-flex align-items-center">
+                    <span class="text-white me-3">
+                        <i class="fas fa-user-circle me-1"></i>
+                        <span class="user-name"></span>
+                    </span>
+                    <button onclick="logout()" class="btn btn-outline-light">
+                        <i class="fas fa-sign-out-alt me-1"></i>Çıkış Yap
+                    </button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container mt-4">
+        <main role="main" class="pb-3">
+            @RenderBody()
+        </main>
+    </div>
+
+    <footer class="footer text-muted bg-light border-top">
+        <div class="container text-center py-3">
+            &copy; @DateTime.Now.Year - Dental Sistem Doktor Paneli
+        </div>
+    </footer>
+
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="~/js/site.js" asp-append-version="true"></script>
+    
+    <script>
+        // Sayfa yüklendiğinde kullanıcı kontrolü
+        document.addEventListener('DOMContentLoaded', function() {
+            const userToken = localStorage.getItem('userToken');
+            const userRole = localStorage.getItem('userRoleName');
+            
+            if (!userToken || userRole !== 'Doctor') {
+                window.location.href = '/';
+                return;
+            }
+            
+            // Kullanıcı adını göster
+            document.querySelector('.user-name').textContent = 
+                localStorage.getItem('name') + ' ' + localStorage.getItem('surName');
+        });
+        
+        function logout() {
+            // LocalStorage'ı temizle
+            localStorage.clear();
+            
+            // Cookie'leri temizle
+            document.cookie.split(";").forEach(function(c) { 
+                document.cookie = c.replace(/^ +/, "").replace(/=.*/, "=;expires=" + new Date().toUTCString() + ";path=/"); 
+            });
+            
+            // Ana sayfaya yönlendir
+            window.location.href = '/';
+        }
+    </script>
+    
+    @await RenderSectionAsync("Scripts", required: false)
+</body>
+</html> 

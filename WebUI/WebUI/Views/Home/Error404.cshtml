@@ -1,0 +1,56 @@
+@{
+    ViewData["Title"] = "404 - Sayfa Bulunamadı";
+    Layout = null;
+}
+
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"]</title>
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body class="error-page">
+    <div class="error-container">
+        <div class="text-center">
+            <i class="fas fa-exclamation-triangle text-warning mb-4" style="font-size: 5rem;"></i>
+            <h1 class="display-1 fw-bold">404</h1>
+            <h2 class="mb-4">Sayfa Bulunamadı</h2>
+            <p class="lead mb-4">Aradığınız sayfaya erişim yetkiniz yok veya sayfa mevcut değil.</p>
+            <button onclick="redirectToHome()" class="btn btn-primary">
+                <i class="fas fa-home me-2"></i>Ana Sayfaya Dön
+            </button>
+        </div>
+    </div>
+
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        function redirectToHome() {
+            const userRole = localStorage.getItem('userRoleName');
+            const userToken = localStorage.getItem('userToken');
+            
+            if (userToken && userRole) {
+                switch(userRole) {
+                    case 'Admin':
+                        window.location.href = '/Admin/Dashboard';
+                        break;
+                    case 'User':
+                        window.location.href = '/User/Dashboard';
+                        break;
+                    case 'Doctor':
+                        window.location.href = '/Doctor/Dashboard';
+                        break;
+                    default:
+                        window.location.href = '/';
+                }
+            } else {
+                window.location.href = '/';
+            }
+        }
+    </script>
+</body>
+</html> 

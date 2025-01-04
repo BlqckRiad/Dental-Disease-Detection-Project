@@ -1,0 +1,102 @@
+@{
+    ViewData["Title"] = "Hasta Dashboard";
+    Layout = "_UserLayout";
+}
+
+<div class="row">
+    <div class="col-md-6 mb-4">
+        <div class="card bg-primary text-white">
+            <div class="card-body">
+                <div class="d-flex justify-content-between align-items-center">
+                    <div>
+                        <h6 class="card-title mb-1">Yaklaşan Randevu</h6>
+                        <h3 class="mb-0">15 Ocak 2024</h3>
+                        <p class="mb-0">Dr. Mehmet Öz - Saat: 14:30</p>
+                    </div>
+                    <div class="icon-circle bg-primary-light">
+                        <i class="fas fa-calendar-alt fa-2x"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="col-md-6 mb-4">
+        <div class="card bg-info text-white">
+            <div class="card-body">
+                <div class="d-flex justify-content-between align-items-center">
+                    <div>
+                        <h6 class="card-title mb-1">Toplam Randevu</h6>
+                        <h3 class="mb-0">8</h3>
+                        <p class="mb-0">Son 6 Ay</p>
+                    </div>
+                    <div class="icon-circle bg-info-light">
+                        <i class="fas fa-clipboard-list fa-2x"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-md-8 mb-4">
+        <div class="card">
+            <div class="card-header bg-white d-flex justify-content-between align-items-center">
+                <h5 class="card-title mb-0">Son Randevularım</h5>
+                <a href="/User/Appointments" class="btn btn-sm btn-outline-primary">
+                    Tümünü Gör
+                </a>
+            </div>
+            <div class="card-body">
+                <div class="table-responsive">
+                    <table class="table table-hover">
+                        <thead>
+                            <tr>
+                                <th>Tarih</th>
+                                <th>Doktor</th>
+                                <th>İşlem</th>
+                                <th>Durum</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>10.01.2024 11:00</td>
+                                <td>Dr. Mehmet Öz</td>
+                                <td>Diş Kontrolü</td>
+                                <td><span class="badge bg-success">Tamamlandı</span></td>
+                            </tr>
+                            <tr>
+                                <td>05.01.2024 14:30</td>
+                                <td>Dr. Fatma Şahin</td>
+                                <td>Dolgu</td>
+                                <td><span class="badge bg-success">Tamamlandı</span></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="col-md-4 mb-4">
+        <div class="card">
+            <div class="card-header bg-white">
+                <h5 class="card-title mb-0">Hızlı İşlemler</h5>
+            </div>
+            <div class="card-body">
+                <div class="d-grid gap-2">
+                    <a href="/User/NewAppointment" class="btn btn-primary">
+                        <i class="fas fa-plus-circle me-2"></i>Yeni Randevu Al
+                    </a>
+                    <a href="/User/Profile" class="btn btn-outline-primary">
+                        <i class="fas fa-user-edit me-2"></i>Profili Düzenle
+                    </a>
+                    <a href="#" class="btn btn-outline-primary">
+                        <i class="fas fa-file-medical me-2"></i>Geçmiş Tedaviler
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div> 

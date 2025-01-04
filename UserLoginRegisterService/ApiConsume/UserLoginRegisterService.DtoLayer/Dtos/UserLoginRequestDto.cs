@@ -19,6 +19,7 @@ namespace UserLoginRegisterService.DtoLayer.Dtos
 		public int UserSexsID { get; set; }
 		public int UserImageID { get; set; }
 		public string? UserImageUrl { get; set; }
+		public string? UserRoleName { get; set; }
 
 	}
 }
