@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("UserLoginRegisterService.BusinessLayer")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+96b23bb880a4fc2047f94f54b4157f6a3b94f832")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+5141c8efba3b2e37c39b238ec7b724483c1134e9")]
 [assembly: System.Reflection.AssemblyProductAttribute("UserLoginRegisterService.BusinessLayer")]
 [assembly: System.Reflection.AssemblyTitleAttribute("UserLoginRegisterService.BusinessLayer")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

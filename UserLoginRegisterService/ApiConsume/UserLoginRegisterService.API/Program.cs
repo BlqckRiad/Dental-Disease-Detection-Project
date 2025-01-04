@@ -24,6 +24,9 @@ builder.Services.AddDbContext<Context>();
 builder.Services.AddScoped<IUserDal, EfUserDal>();
 builder.Services.AddScoped<IUserService, UserManager>();
 
+builder.Services.AddScoped<IRoleDal, EfRoleDal>();
+builder.Services.AddScoped<IRoleService, RoleManager>();
+
 // JWT Authentication configuration
 var secretKey = Encoding.UTF8.GetBytes("LoginRegisterAPIJWT123LoginRegisterAPIJWT123"); // Replace with your secure key
 builder.Services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme)

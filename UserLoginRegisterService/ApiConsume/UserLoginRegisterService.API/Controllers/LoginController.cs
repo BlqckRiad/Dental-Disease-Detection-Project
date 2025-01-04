@@ -18,9 +18,11 @@ namespace UserLoginRegisterService.API.Controllers
 	public class LoginController : ControllerBase
 	{
 		private readonly IUserService _userService;
-        public LoginController(IUserService userService)
+		private readonly IRoleService _roleService;
+        public LoginController(IUserService userService , IRoleService roleService)
         {
             _userService = userService;
+			_roleService = roleService;
         }
         [HttpPost]
 		public IActionResult UserLogin(UserLoginDto model)
@@ -100,17 +102,12 @@ namespace UserLoginRegisterService.API.Controllers
 			var credentials = new SigningCredentials(securityKey, SecurityAlgorithms.HmacSha256);
 
 			// Role mapping
-			string roleName = user.UserRoleID switch
-			{
-				1 => "User",
-				2 => "Admin",
-				_ => "Unknown"
-			};
+			string roleName = _roleService.TGetByid(user.UserRoleID).RoleName ?? "User";
 
 			// Create claims
 			var claims = new[]
 			{
-				new Claim(JwtRegisteredClaimNames.Sub, user.UserName),
+				new Claim(JwtRegisteredClaimNames.Sub, user.UserName ?? "NoName"),
 				new Claim(JwtRegisteredClaimNames.Jti, Guid.NewGuid().ToString()), // Unique token identifier
 				new Claim("UserID", user.UserID.ToString()),
 				new Claim("RoleID", user.UserRoleID.ToString()),
