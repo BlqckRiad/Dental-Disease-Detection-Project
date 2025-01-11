@@ -70,7 +70,7 @@ namespace WebUI.Controllers
                 var content = new StringContent(json, Encoding.UTF8, "application/json");
 
                 var response = await client.PostAsync("https://localhost:7254/api/Register/UserRegister", content);
-                var responseContent = await response.Content.ReadAsStringAsync();
+                // var responseContent = await response.Content.ReadAsStringAsync();
 
                 return Json(new { success = response.IsSuccessStatusCode, data = responseContent });
             }
