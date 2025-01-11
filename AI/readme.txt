@@ -1,0 +1,1 @@
+dataset : https://www.kaggle.com/datasets/abbasseifossadat/dental-radiography-segmentation
